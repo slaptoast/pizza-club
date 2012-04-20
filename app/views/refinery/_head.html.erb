@@ -10,9 +10,13 @@
 
   <%= stylesheet_link_tag "application", "formatting", "theme" %>
   <%= stylesheet_link_tag "home" if home_page? %>
+  <%= stylesheet_link_tag 'bootstrap' %>
+  <%= stylesheet_link_tag 'bootstrap-responsive' %>
   <%= yield :stylesheets %>
 
   <%= render '/refinery/google_analytics' %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <%= javascript_include_tag 'modernizr-min' %>
+  <%= javascript_include_tag 'bootstrap.min' %>
+  
 </head>
